@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e0e8ff;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  width: min-content;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  color: #1f2f56;
+  box-shadow: 0 15px 30px 0px rgba(60, 100, 138, 0.301);
+}
+.card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5em 3em 2em;
+}
+.card .content h1 {
+  margin-bottom: 0;
+  font-weight: 900;
+}
+.card .content p {
+  color: #7280a7;
+}
+.card .content .plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f7ff;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+}
+.card .content .plan-container .plan {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.card .content .plan-container .plan img {
+  margin: auto 1em auto auto;
+}
+.card .content .plan-container .price h4 {
+  font-weight: 900;
+}
+.card .content .plan-container .price p {
+  color: #7280a7;
+}
+.card .content .plan-container .price > * {
+  margin: 0.3em 0;
+}
+.card .content .plan-container a {
+  font-family: "Red Hat Display", sans-serif;
+  color: #3829e0;
+  font-weight: 700;
+}
+.card .content button {
+  border-style: none;
+  background: none;
+  padding: 1em;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+}
+.card .content button.proceed {
+  background: #3829e0;
+  color: white;
+  border-radius: 10px;
+  margin: 2em 0;
+  box-shadow: 0 15px 10px 0px #e0e8ff;
+  transition: 0.2s;
+}
+.card .content button.proceed:hover {
+  background: #3829e0ab;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content button.cancel {
+  color: #7280a7;
+  transition: 0.2s;
+}
+.card .content button.cancel:hover {
+  cursor: pointer;
+  color: #1f2f56;
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=style.css.map */

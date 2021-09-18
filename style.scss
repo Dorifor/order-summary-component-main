@@ -1,0 +1,133 @@
+//// Layout
+$mobile-w: 400px;
+$desktop-w: 1440px;
+
+//// Colors
+// Primary
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+// Neutral
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+// Font :
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: $pale-blue;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  width: min-content;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  color: $dark-blue;
+  box-shadow: 0 15px 30px 0px rgba(60, 100, 138, 0.301);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5em 3em 2em;
+
+    h1 {
+      margin-bottom: 0;
+      font-weight: 900;
+    }
+
+    p {
+      color: $desaturated-blue;
+    }
+
+    .plan-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: $very-pale-blue;
+      // background: crimson;
+      border-radius: 10px;
+      padding: 1em 1.5em;
+
+      .plan {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        img {
+          margin: auto 1em auto auto;
+        }
+      }
+
+      .price {
+        h4 {
+          font-weight: 900;
+        }
+
+        p {
+          color: $desaturated-blue;
+        }
+
+        & > * {
+          margin: 0.3em 0;
+        }
+      }
+
+      a {
+        font-family: "Red Hat Display", sans-serif;
+        color: $bright-blue;
+        font-weight: 700;
+      }
+    }
+
+    button {
+      border-style: none;
+      background: none;
+      padding: 1em;
+      font-weight: 900;
+      font-family: "Red Hat Display", sans-serif;
+      // font-size: 1em;
+
+      &.proceed {
+        background: $bright-blue;
+        color: white;
+        border-radius: 10px;
+        margin: 2em 0;
+        box-shadow: 0 15px 10px 0px $pale-blue;
+        transition: 0.2s;
+
+        &:hover {
+          background: #3829e0ab;
+          cursor: pointer;
+          transition: 0.2s;
+        }
+      }
+
+      &.cancel {
+        color: $desaturated-blue;
+        transition: 0.2s;
+        &:hover {
+          cursor: pointer;
+          color: $dark-blue;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
