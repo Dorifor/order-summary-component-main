@@ -1,4 +1,5 @@
 //// Layout
+// Changed mobile width to fit my phone
 $mobile-w: 400px;
 $desktop-w: 1440px;
 
@@ -47,7 +48,7 @@ body {
     justify-content: space-around;
     padding: 1.5em 3em 2em;
 
-    h1 {
+    h2 {
       margin-bottom: 0;
       font-weight: 900;
     }
@@ -128,6 +129,17 @@ body {
           transition: 0.2s;
         }
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: $mobile-w){
+  .card {
+    margin: 0 1em;
+
+    .content {
+      padding: 2em;
     }
   }
 }

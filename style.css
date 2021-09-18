@@ -29,7 +29,7 @@ body {
   justify-content: space-around;
   padding: 1.5em 3em 2em;
 }
-.card .content h1 {
+.card .content h2 {
   margin-bottom: 0;
   font-weight: 900;
 }
@@ -94,6 +94,15 @@ body {
   cursor: pointer;
   color: #1f2f56;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    margin: 0 1em;
+  }
+  .card .content {
+    padding: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
